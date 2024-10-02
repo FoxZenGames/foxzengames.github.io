@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoxZen</title>
+    <style>
+        /* Basic page styling */
+        body {
+            background-color: #000000; /* Background color */
+            color: #EAEAEA; /* Text color */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Navbar styling */
+        nav {
+            width: 100%;
+            background-color: #1A1A1A; /* Navbar background */
+            border-bottom: 2px solid #5C1815; /* Navbar border */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #FFFFFF; /* Navbar text color */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #FFA326; /* Hover color for navbar links */
+        }
+
+        /* Center image styling */
+        .logo-container {
+            margin-top: 20px;
+            text-align: center;
+            width: 100%; /* Full width for responsive design */
+        }
+
+        img {
+            max-width: 100%; /* Responsive width: fits within the screen width */
+            max-height: 100vh; /* Responsive height: fits within the screen height */
+            height: auto; /* Maintain image aspect ratio */
+            width: auto; /* Maintain image aspect ratio */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #1A1A1A; /* Footer background */
+            color: #EAEAEA; /* Footer text */
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #FFA326; /* Footer link color */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #F4620F; /* Footer hover link color */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Logo centered at the top -->
+    <div class="logo-container">
+        <img src="/assets/img/logo.png" alt="FoxZen Logo">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FoxZen. All rights reserved.</p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </footer>
+
+</body>
+</html>
