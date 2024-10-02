@@ -13,10 +13,8 @@
             padding: 0;
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             flex-direction: column;
+            min-height: 100vh;
         }
 
         /* Navbar styling */
@@ -41,9 +39,11 @@
 
         /* Center image styling */
         .logo-container {
-            margin-top: 20px;
             text-align: center;
-            width: 100%; /* Full width for responsive design */
+            flex-grow: 1; /* Allows the image container to grow and push the footer down */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         img {
@@ -55,13 +55,12 @@
 
         /* Footer styling */
         footer {
-            background-color: #1A1A1A; /* Footer background */
-            color: #EAEAEA; /* Footer text */
+            background-color: #000000; /* Footer background color */
+            color: #EAEAEA; /* Footer text color */
             width: 100%;
             text-align: center;
             padding: 10px 0;
-            position: absolute;
-            bottom: 0;
+            border-top: 2px solid #5C1815; /* Optional: a border to separate footer */
         }
 
         footer a {
@@ -83,12 +82,12 @@
         <a href="#">Contact</a>
     </nav>
 
-    <!-- Logo centered at the top -->
+    <!-- Logo centered on the page -->
     <div class="logo-container">
         <img src="/assets/img/logo.png" alt="FoxZen Logo">
     </div>
 
-    <!-- Footer -->
+    <!-- Footer that starts below the image -->
     <footer>
         <p>&copy; 2024 FoxZen. All rights reserved.</p>
         <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
