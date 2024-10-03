@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>FoxZen</title>
     <style>
-        /* Basic page styling with Roboto font */
+        /* Apply Roboto font and basic page styling */
         body {
-            background-color: #000000; /* Full black background */
+            background-color: #000000; /* Black background */
             color: #f6750f; /* Text color */
             margin: 0;
             padding: 0;
@@ -18,30 +18,32 @@
             font-weight: 400;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Full viewport height */
-            justify-content: space-between; /* Space between image and footer */
+            min-height: 100vh;
+            justify-content: space-between;
+            padding-bottom: env(safe-area-inset-bottom); /* Ensure footer isn't blocked by UI */
         }
 
-        /* Image styling */
+        /* Ensure the logo is positioned 30% down the screen */
         .logo-container {
             text-align: center;
-            margin-top: 0;
+            margin-top: 30vh; /* 30% down the screen */
             width: 100%;
         }
 
         img {
-            max-width: 80%; /* Responsive width: max 80% of the screen */
-            height: auto; /* Maintain image aspect ratio */
+            max-width: 80%; /* Responsive width: max 80% of screen */
+            height: auto; /* Maintain aspect ratio */
         }
 
-        /* Footer styling */
+        /* Footer always at the bottom, above any phone UI elements */
         footer {
-            background-color: #000000; /* Same background as page */
-            color: #f6750f; /* Text color */
-            font-family: "Roboto", Arial, sans-serif; /* Roboto font */
+            background-color: #000000; /* Black footer background */
+            color: #f6750f; /* Footer text color */
+            font-family: "Roboto", Arial, sans-serif;
             font-weight: 400;
             text-align: center;
             padding: 10px 0;
+            padding-bottom: env(safe-area-inset-bottom); /* Ensures visibility on iPhones */
         }
 
         footer p {
@@ -51,12 +53,12 @@
 </head>
 <body>
 
-    <!-- Logo container at the top -->
+    <!-- Logo container positioned 30% down -->
     <div class="logo-container">
         <img src="/assets/img/logo.png" alt="FoxZen Logo">
     </div>
 
-    <!-- Footer always at the bottom -->
+    <!-- Footer always at the bottom, above any UI elements -->
     <footer>
         <p>&copy; 2024 FoxZen. All rights reserved.</p>
     </footer>
