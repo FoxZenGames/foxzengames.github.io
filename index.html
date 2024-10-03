@@ -23,16 +23,21 @@
             padding-bottom: env(safe-area-inset-bottom); /* Ensure footer isn't blocked by UI */
         }
 
-        /* Ensure the logo is positioned 30% down the screen */
+        /* Flexbox container for the logo */
         .logo-container {
-            text-align: center;
-            margin-top: 30vh; /* 30% down the screen */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align near the top */
+            flex-grow: 1;
+            padding-top: 15vh; /* 15% space from the top of the screen */
             width: 100%;
         }
 
         img {
-            max-width: 80%; /* Responsive width: max 80% of screen */
+            max-width: 80vw; /* Max 80% of the screen width */
+            max-height: 80vh; /* Max 80% of the screen height */
             height: auto; /* Maintain aspect ratio */
+            width: auto; /* Maintain aspect ratio */
         }
 
         /* Footer always at the bottom, above any phone UI elements */
@@ -53,7 +58,7 @@
 </head>
 <body>
 
-    <!-- Logo container positioned 30% down -->
+    <!-- Logo container, flexbox alignment helps adjust on larger screens -->
     <div class="logo-container">
         <img src="/assets/img/logo.png" alt="FoxZen Logo">
     </div>
