@@ -8,80 +8,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>FoxZen</title>
     <style>
-        /* Basic page styling */
+        /* Basic page styling with Roboto font */
         body {
-            background-color: #000000; /* Background color */
-            color: #f4620f; /* Text color */
+            background-color: #000000; /* Full black background */
+            color: #f6750f; /* Text color */
             margin: 0;
             padding: 0;
-            font-family: "Roboto", Arial, sans-serif;
+            font-family: "Roboto", Arial, sans-serif; /* Roboto font */
             font-weight: 400;
             display: flex;
             flex-direction: column;
             min-height: 100vh; /* Full viewport height */
+            justify-content: space-between; /* Space between image and footer */
         }
 
-        /* Logo container styling */
+        /* Image styling */
         .logo-container {
             text-align: center;
-            flex-grow: 1; /* Allow logo container to grow */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(100vh - 60px); /* Adjust logo container height to leave space for footer */
+            margin-top: 0;
+            width: 100%;
         }
 
         img {
-            max-width: 90vw; /* Responsive width */
-            max-height: 100%; /* Take up available space without exceeding container */
-            height: auto; /* Maintain aspect ratio */
-            width: auto; /* Maintain aspect ratio */
+            max-width: 80%; /* Responsive width: max 80% of the screen */
+            height: auto; /* Maintain image aspect ratio */
         }
 
         /* Footer styling */
         footer {
-            background-color: #000000; /* Footer background color */
-            color: #f4620f; /* Footer text color */
-            font-family: "Roboto", Arial, sans-serif;
+            background-color: #000000; /* Same background as page */
+            color: #f6750f; /* Text color */
+            font-family: "Roboto", Arial, sans-serif; /* Roboto font */
             font-weight: 400;
-            width: 100%;
             text-align: center;
             padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            left: 0;
         }
 
         footer p {
             margin: 0;
-            padding: 0;
-        }
-
-        /* Navbar placeholder styling */
-        nav {
-            background-color: #000000; /* Placeholder for future navbar */
-            font-family: "Roboto", Arial, sans-serif;
-            font-weight: 400;
-            width: 100%;
-            padding: 10px 0;
-            text-align: center;
-            font-size: 18px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Optional Navbar placeholder -->
-    <nav>
-        <!-- Future Navbar content here -->
-    </nav>
-
-    <!-- Logo centered on the page -->
+    <!-- Logo container at the top -->
     <div class="logo-container">
         <img src="/assets/img/logo.png" alt="FoxZen Logo">
     </div>
 
-    <!-- Footer that floats at the bottom -->
+    <!-- Footer always at the bottom -->
     <footer>
         <p>&copy; 2024 FoxZen. All rights reserved.</p>
     </footer>
