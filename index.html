@@ -8,13 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>FoxZen</title>
     <style>
-        /* Roboto font */
-        .roboto-regular {
-          font-family: "Roboto", sans-serif;
-          font-weight: 400;
-          font-style: normal;
-        }
-
         /* Basic page styling */
         body {
             background-color: #000000; /* Background color */
@@ -23,28 +16,26 @@
             padding: 0;
             font-family: "Roboto", Arial, sans-serif;
             font-weight: 400;
-            font-style: normal;
             display: flex;
             flex-direction: column;
-            height: 100vh; /* Set body to fill 100% of the viewport height */
+            min-height: 100vh; /* Full viewport height */
         }
 
         /* Logo container styling */
         .logo-container {
             text-align: center;
-            flex-grow: 1; /* Allows the image container to grow and push the footer down */
+            flex-grow: 1; /* Allow logo container to grow */
             display: flex;
             justify-content: center;
             align-items: center;
-            max-height: 90vh; /* Limit the logo and container to 90% of the screen height */
-            overflow: hidden; /* Hide anything that exceeds the container height */
+            height: calc(100vh - 60px); /* Adjust logo container height to leave space for footer */
         }
 
         img {
-            max-width: 90vw; /* Set maximum width to 90% of viewport width */
-            max-height: 80vh; /* Set maximum height to 80% of viewport height */
-            height: auto; /* Maintain image aspect ratio */
-            width: auto; /* Maintain image aspect ratio */
+            max-width: 90vw; /* Responsive width */
+            max-height: 100%; /* Take up available space without exceeding container */
+            height: auto; /* Maintain aspect ratio */
+            width: auto; /* Maintain aspect ratio */
         }
 
         /* Footer styling */
@@ -53,29 +44,41 @@
             color: #f4620f; /* Footer text color */
             font-family: "Roboto", Arial, sans-serif;
             font-weight: 100;
-            font-style: normal;
             width: 100%;
             text-align: center;
             padding: 10px 0;
-            border-top: 2px solid #000000; /* Optional: a border to separate footer */
-            flex-shrink: 0; /* Prevent footer from shrinking */
+            position: absolute;
+            bottom: 0;
+            left: 0;
         }
 
         footer p {
             margin: 0;
             padding: 0;
-            font-size: 14px; /* Small font size to fit within small screens */
+        }
+
+        /* Navbar placeholder styling */
+        nav {
+            background-color: #000000; /* Placeholder for future navbar */
+            padding: 10px 0;
+            text-align: center;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
+
+    <!-- Optional Navbar placeholder -->
+    <nav>
+        <!-- Future Navbar content here -->
+    </nav>
 
     <!-- Logo centered on the page -->
     <div class="logo-container">
         <img src="/assets/img/logo.png" alt="FoxZen Logo">
     </div>
 
-    <!-- Footer that starts below the image -->
+    <!-- Footer that floats at the bottom -->
     <footer>
         <p>&copy; 2024 FoxZen. All rights reserved.</p>
     </footer>
