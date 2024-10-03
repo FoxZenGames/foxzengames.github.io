@@ -64,9 +64,28 @@
     </div>
 
     <!-- Footer always at the bottom, above any UI elements -->
-    <footer>
-        <p>&copy; 2024 FoxZen. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 FoxZen. All rights reserved.</p>
+    <style>
+        footer {
+            position: relative; /* Ensure footer is positioned properly */
+            background-color: #000000; /* Black footer background */
+            color: #f6750f; /* Footer text color */
+            font-family: "Roboto", Arial, sans-serif;
+            font-weight: 400;
+            text-align: center;
+            padding: 10px 0;
+            padding-bottom: 15px; /* Added bottom padding for visibility */
+            padding-bottom: env(safe-area-inset-bottom); /* Ensures visibility on iPhones */
+            box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.1); /* Optional: Adds a slight shadow for visibility */
+        }
+
+        footer p {
+            margin: 0;
+            padding: 0; /* Remove extra padding to keep text centered */
+        }
+    </style>
+</footer>
 
 </body>
 </html>
