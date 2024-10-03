@@ -27,7 +27,8 @@
             flex-grow: 1; /* Allow logo container to grow */
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Align image to the top part of the screen */
+            padding-top: 10vh; /* Add top padding to push the logo up */
             height: calc(100vh - 60px); /* Adjust logo container height to leave space for footer */
         }
 
@@ -73,7 +74,7 @@
         <!-- Future Navbar content here -->
     </nav>
 
-    <!-- Logo centered on the page -->
+    <!-- Logo centered on the page, slightly higher than before -->
     <div class="logo-container">
         <img src="/assets/img/logo.png" alt="FoxZen Logo">
     </div>
